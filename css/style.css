@@ -1,0 +1,130 @@
+/********* Estilo cabecera *****************/
+
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.fondo{
+    background-image: url(../images/background-image.jpg);
+    height: auto;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.navbar {
+    display: inline-block;
+    background-color: grey;
+    height: 40px;
+}
+
+.logoimagen {
+    position: relative;
+    display: block;
+    margin-top: 50px;
+    margin-left: 725px;
+    opacity: 0.9;
+    top: -100px;
+}
+
+.letraheader {
+    text-align: center;
+    color: blanchedalmond;
+}
+
+li {
+    display: inline;
+    margin-right: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 10px;
+    padding: 0;
+}
+
+/****************** pagina home *******************/
+
+.principal {
+    text-align: center;
+}
+.fecha {
+  float: left;
+  margin-right: 10px;
+  text-align: left;
+}
+
+.desc {
+  margin-top: 55px;
+}
+
+.boton {
+  margin: 60px 0 0 20px;
+}
+
+.caja {
+  display: inline-block;
+  width: 400px;
+}
+.numero {
+  font-size: 3em;
+  text-align: right;
+}
+
+.negrita {
+  font-weight: 800;
+}
+
+p span {
+  font-weight: bold;
+}
+
+hr {
+  width: 30%;
+}
+
+
+/********* Pagina mentores *****************/
+
+.headmentor {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+.mentores{
+    margin-top: 50px;
+    width: 100%;
+}
+
+.mentor {
+    width: 15%;
+    text-align: center;
+    margin-top: 45px;
+    margin-left: 240px;
+    float: left;
+}
+
+.mentorimg {
+    width: 200px;
+    height: 200px;
+    border-radius:150px;
+}
+
+
+/********************** pagina contacto ********************/
+
+.contact {
+    text-align: center;
+}
+
+.info {
+    text-align: center;
+    margin-top: 50px;
+}
