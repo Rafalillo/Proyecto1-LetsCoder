@@ -19,24 +19,23 @@
                         <a href="#mentorpage">Conocenos</a></li>
                     <li><a name="informacion"></a>
                         <a href="#info">Información</a></li>
+                    <li><a name="inscribete"></a>
+                        <a href="#inscribe">Inscribete</a></li>
                     <li><a name="contacto"></a>
                         <a href="#abajo">Contacto</a></li>
                 </ul>
             </div>
             <div class="logo">
-                <a href="#arriba"><img src="/images/letscoder-square.jpeg" alt="logoLetsCoder" class="logoimagen"></a>
+                <a href="#arriba"><img src="/images/letscoder-square.jpeg" alt="logoLetsCoder" class="logoimagen "></a>
             </div>
             <div class="fondo">
-                <!-- <div class="logo">
-                    <a href="#arriba"><img src="/images/letscoder-square.jpeg" alt="logoLetsCoder" class="logoimagen"></a>
-                </div> -->
                 <h1 class="letraheader">Let´s Coder</h1>
             </div>  
         </div>
     </header>
     <div class="container-cursos">
         
-        <h2 class="proximo">Próximas fechas</h2>
+        <h1 class="texto-fechas">PRÓXIMAS FECHAS</h1>
         <div class="principal">
             
             <div class="flip-card">
@@ -104,6 +103,7 @@
             </div>
         </div>
     </div>
+    <br><br><br><br><br>
     <div class="flecha-abajo">
         <p><a href="#mentorpage">&#11015;
         </a></p>
@@ -117,7 +117,7 @@
         </div>
         <div class="headmentor">
             
-            <h2>Conócenos</h2>
+            <h1 class="texto-sobre">CONÓCENOS</h1>
             <p>¿Quieres aprender las técnologias y metodologías necesarias para realizar una aplicación Web completa?¿quieres aprender 
                 los fundamentos de programación necesarios para iniciar tu carrera como programador? <br> Nada sería posible sin nuestros
                 mentores, y aquí os los presentamos:
@@ -149,6 +149,7 @@
             </div>
         </div>
     </div>
+    <br><br>
     <div class="flecha-abajo">
         <p><a href="#info">&#11015;
         </a></p>
@@ -161,9 +162,10 @@
     
     <br><br>
 
-    <a name="info"></a>
+    
     
     <div class="container-info">
+        <a name="info"></a>
         <div class="flecha-arriba-mentor">
             <p><a href="#mentorpage">&#11014;
             </a></p>
@@ -322,32 +324,35 @@
             </div>
         </div>
         <div class="flecha-abajo-info">
-            <p><a href="#abajo">&#11015;
+            <p><a href="#inscribe">&#11015;
             </a></p>
         </div>
     </div>
     <div class="container-form">
+        <a name="inscribe"></a>
         <div class="texto-form">
             <h1>FORMULARIO DE INSCRIPCION </h1>
+            <div class="flecha-arriba-inscribe">
+                <p><a href="#info">&#11014;
+                </a></p>
+            </div>
         </div>
         <div class="main-form">
             <form action="felicidades.html">
                 <div class="datos">
                     <fieldset>
-                        <legend>Datos personales</legend>
+                        <p>Datos personales</p>
                         <div class="nombre">
-                            <label for="name">*Nombre:</label>
+                            <label for="name">Nombre*</label>
                             <input type="text" name="name" id="name" placeholder="Aquí tu nombre" required>
-                        </div>
-                        <div class="apellidos">
-                            <label for="apellidos">*Apellidos</label>
+                            <label for="apellidos">Apellidos*</label>
                             <input type="text" name="apellidos" id="apellidos" placeholder="Aquí tus apellidos" required>
                         </div>
                         <div class="direccion">
                             <label for="address">Dirección</label>
                             <input type="text" name="address" id="address" placeholder="Aquí tu dirección">
                             <label for="ciudad">Ciudad</label>
-                            <input type="text" name="ciudad" id="ciudad" placeholder="Aquí tu ciudad">
+                            <input type="text" class="calle" name="ciudad" id="ciudad" placeholder="Aquí tu ciudad">
                             <label for="comunidad">Comunidad Autonoma</label>
                             <select name="comunidad" id="comunidad">
                                 <option value="andalucia">Andalucia</option>
@@ -360,51 +365,79 @@
                                 <option value="cataluña">Cataluña</option>
                                 <option value="extremadura">Extremadura</option>
                                 <option value="madrid">Comunidad de Madrid</option>
-                            </select>
+                            </select><br>
                             <label for="cp">Código postal</label>
                             <input type="number" name="cp" id="cp" placeholder="C.P." maxlength="5">
                         </div>
                         <div class="edad">
-                            <label for="edad">*Fecha nacimiento</label>
+                            <label for="edad">Fecha nacimiento*</label>
                             <input type="date" name="edad" id="edad" required>
                         </div>
                         <div class="contacto">
-                            <label for="email">*Correo electrónico</label>
+                            <label for="email">Correo electrónico*</label>
                             <input type="email" name="email" id="email" placeholder="@mail" required>
-                            <label for="telefono">*Teléfono</label>
+                            <label for="telefono">Teléfono*</label>
                             <input type="tel" name="telefono" id="telefono" placeholder="Teléfono" required>
                         </div>
                     </fieldset>
                     <fieldset>
-                        <div class="como">
-                            <label for="como">¿Como nos conociste?</label>
-                            <label><input type="checkbox" id="cbox1">TV</label>
-                            <label><input type="checkbox" id="cbox2">RRSS</label>
-                            <label><input type="checkbox" id="cbox3">Google</label>
-                            <label><input type="checkbox" id="cbox4">Otros</label>
+                        <div class="masinfo">
+                            <div class="como">
+                                <p>¿Como nos conociste?</p>
+                                <label><input type="checkbox" id="cbox1">TV</label>
+                                <label><input type="checkbox" id="cbox2">RRSS</label>
+                                <label><input type="checkbox" id="cbox3">Google</label>
+                                <label><input type="checkbox" id="cbox4">Otros</label>
+                            </div>
+                            <div class="cual">
+                                <p>¿Que curso quieres hacer?*</p>
+                                <label><input type="radio" name="curso" id="full">Full-Time</label>
+                                <label><input type="radio" name="curso" id="part">Part-Time</label>
+                            </div>
+                            <div class="donde">
+                                <p>¿Donde quieres hacer el curso?*</p>
+                                <select name="donde" id="donde">
+                                    <option value="barcelona">Barcelona</option>
+                                    <option value="madrid">Madrid</option>
+                                    <option value="Zaragoza">Zaragoza</option>
+                                    <option value="online">Online</option>
+                                </select>
+                            </div>
+                            <div class="conocimientos">
+                                <p>¿Tienes conocimientos previos?</p>
+                                <label><input type="checkbox" id="cbox5">HTML</label>
+                                <label><input type="checkbox" id="cbox6">CSS</label>
+                                <label><input type="checkbox" id="cbox7">Javascript</label>
+                                <label><input type="checkbox" id="cbox8">PHP</label>
+                                <label><input type="checkbox" id="cbox9">Otros</label>
+                                <label><input type="checkbox" id="cbox0">Sin conocimientos</label>
+                            </div>
                         </div>
-                        <div class="cual">
-                            <label for="cual">¿Que curso quieres hacer?</label>
-                            <label><input type="radio" name="curso" id="full">Full-Time</label>
-                            <label><input type="radio" name="curso" id="part">Part-Time</label>
+                    </fieldset>
+                    <fieldset>
+                        <div class="texto-sobremi">
+                            <p>Cuentanos un poco por que quieres hacer el bootcamp:</p>
+                            <textarea rows="6" cols="40" maxlength="800"></textarea>  
                         </div>
-                        <div class="donde">
-                            <label for="donde">¿Donde quieres hacer el curso?</label>
-                            <select name="donde" id="donde">
-                                <option value="barcelona">Barcelona</option>
-                                <option value="madrid">Madrid</option>
-                                <option value="Zaragoza">Zaragoza</option>
-                                <option value="online">Online</option>
-                            </select>
+                    </fieldset>
+                    <fieldset>
+                        <div class="botones">
+                            <input type="submit" value="Enviar" class="boton-form">
+                            <input type="reset" value="Borrar" class="boton-form">
                         </div>
+                        <p class="obligatorio">Los campos marcados con * son obligatorios</p>
                     </fieldset>
                 </div>
             </form>
         </div>
+        <div class="flecha-abajo-inscribe">
+            <p><a href="#abajo">&#11015;
+            </a></p>
+        </div>
     </div>
-        <br><br><br><br><br>    <br><br><br><br><br><br><br>
-    <div class="flecha-arriba">
-        <p><a href="#info">&#11014;
+        <br><br><br><br><br>    <br><br><br>
+    <div class="flecha-arriba-contacto">
+        <p><a href="#inscribe">&#11014;
         </a></p>
     </div>
     <br><br><br><br><br><br><br><br><br>

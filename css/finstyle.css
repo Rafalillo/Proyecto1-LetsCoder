@@ -74,12 +74,33 @@ ul {
     border-radius: 25px 0px 0px 25px;
 }
 
+.logo-felicidades {
+    text-align: center;
+}
+
+.texto-felicidades {
+    color: rgb(252, 166, 6, 0.8);
+    /* -webkit-user-select: none; */
+    margin-top: 200px;
+    transition: background-color 300ms;
+}
 .letraheader {
-    clear: both;
     text-align: center;
     color: blanchedalmond;
 }
 
+.inicio {
+    margin-top: 5PX;
+    background-color: rgb(252, 166, 6, 0.5);
+    border-radius: 25%;
+    color: blanchedalmond;
+    width: 100px;
+    height: 50px;
+}
+
+.inicio:hover {
+    transform: scale(1.2);
+}
 /****************** pagina home *******************/
 
 .principal {
@@ -114,10 +135,10 @@ ul {
     transform: scale(1.2);
 }
 
-.proximo {
+.texto-fechas {
     text-align: center;
-    margin-top: 50px;
-    margin-bottom: -50px;
+    margin-top: 150px;
+    margin-bottom: -150px;
 } 
 
 .flip-card {
@@ -193,7 +214,7 @@ ul {
     margin-left: 300px;
     position: relative;
     text-align: center;
-    background-color: rgb(252, 166, 6);
+    background-color: rgb(252, 166, 6, 0.5);
     opacity: 0.8;
     background-clip: border-box;
     border: 2px solid rgba(250, 9, 9, 0.125);
@@ -221,6 +242,11 @@ ul {
     display:block;
     transition: all .5s;
     
+}
+
+.headmentor p {
+    background-color: rgb(252, 166, 6, 0.5);
+    border-radius: 20px;
 }
 
 
@@ -274,6 +300,24 @@ ul {
     z-index: 3;
 }
 
+.flecha-arriba-inscribe {
+    text-align: right;
+    font-size: 2em;
+    margin-top: -80px;
+}
+
+.flecha-abajo-inscribe {
+    text-align: right;
+    font-size: 2em;
+    margin-top: -80px;
+}
+
+.flecha-arriba-contacto {
+    text-align: right;
+    font-size: 2em;
+    margin-bottom: 100px;
+}
+
 /************ Página Información ******************/
 
 .tabla-alumnos {
@@ -282,14 +326,13 @@ ul {
     justify-content: space-evenly;
 }
 
-.texto-info, .texto-form {
+.texto-info, .texto-form, .texto-fechas, .texto-sobre {
     text-align: center;
     color: rgb(252, 166, 6);
     text-shadow: 2px 2px yellowgreen;
+    height: min-content;
     animation-duration: 3s;
     animation-name: slidein;
-    height: min-content;
-    z-index: 1;
 }
 @keyframes slidein {
     from {
@@ -352,3 +395,50 @@ tr:nth-child(even) {
  .listas li {
      font-weight: 900;
  }
+
+ /************ Página Formulario ******************/
+
+ fieldset {
+    /* width: 100%; */
+ }
+
+ .main-form {
+     width: 50%;
+     margin: 0 auto;
+     background-color: rgb(252, 166, 6, 0.5);
+ }
+
+ .datos, .masinfo, .texto-sobremi  {
+     display: flex;
+     flex-direction: column;
+     /* justify-content: space-around; */
+     margin: 0px auto;
+     
+ }
+
+ .datos label, .datos input {
+     margin: 5px;
+ }
+
+ .obligatorio {
+     font-size: 0.8em;
+     text-align: center;
+ }
+
+ .botones {
+     display: flex;
+     justify-content: space-around;
+ }
+
+ .boton-form{
+     margin-top: 5PX;
+     background-color: rgb(252, 166, 6, 0.5);
+     border-radius: 25%;
+     color: blanchedalmond;
+     width: 100px;
+     height: 50px;
+ }
+
+.boton-form:hover {
+    transform: scale(1.2);
+}
