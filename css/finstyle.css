@@ -4,7 +4,7 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-image: url(../images/background-image.jpg);
     height: auto;
     background-size: cover;
@@ -31,7 +31,7 @@ html {
 .navegacion:hover ~ .logoimagen {
     border-radius: 25px 0px 0px 25px;
 }
-li {
+.navbar li {
     display: inline;
     margin-right: 15px;
     opacity: 0.6;
@@ -62,7 +62,6 @@ ul {
     opacity: 0.6;
     float: left;
     height: 60px;
-    /* border-radius: 25px 0px 0px 25px; */
 }
 
 .navegacion:hover > .oculto {
@@ -80,7 +79,6 @@ ul {
 
 .texto-felicidades {
     color: rgb(252, 166, 6, 0.8);
-    /* -webkit-user-select: none; */
     margin-top: 200px;
     transition: background-color 300ms;
 }
@@ -122,7 +120,7 @@ ul {
     padding: 15px;
     border: solid 1px rgba(250, 9, 9, 0.125);
     border-radius: 25px;
-    
+    border: 1px solid rgba(250, 9, 9, 0.125);
 }  
 
  .boton {
@@ -178,7 +176,6 @@ ul {
 
   .flip-card-front {
     width: 200px;
-    /* background-color: #bbb; */
     color: black;
   }
   
@@ -188,6 +185,7 @@ ul {
     color: blanchedalmond;
     transform: rotateY(180deg);
     border-radius: 25px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.5);
 
   }
 /********* Pagina mentores *****************/
@@ -204,8 +202,6 @@ ul {
 .mentores{
     margin-top: 50px;
     width: 100%;
-    /* display: flex;
-    justify-content: space-evenly; */
 }
 
 .mentor-card {
@@ -279,7 +275,7 @@ ul {
 .flecha-arriba {
     text-align: right;
     font-size: 2em;
-    margin-bottom: 10px;
+    margin-bottom: 35px;
 }
   
 .flecha-abajo {
@@ -380,7 +376,7 @@ tr:nth-child(even) {
 }
 
 .lista-ordenada, .lista-desordenada, .lista-definicion   {
-    background-color: rgb(252, 166, 6, 0.5);
+    background-color: rgb(252, 166, 6, 0.6);
     border: 1px solid rgba(250, 9, 9, 0.125);
     box-shadow: 2px 2px rgb(252, 166, 6);
 }
@@ -392,15 +388,13 @@ tr:nth-child(even) {
      margin-left: 60px;
  }
 
- .listas li {
-     font-weight: 900;
+.listas ul, .listas ol {
+    display: flex; flex-direction: column;
  }
+
 
  /************ Página Formulario ******************/
 
- fieldset {
-    /* width: 100%; */
- }
 
  .main-form {
      width: 50%;
@@ -411,7 +405,6 @@ tr:nth-child(even) {
  .datos, .masinfo, .texto-sobremi  {
      display: flex;
      flex-direction: column;
-     /* justify-content: space-around; */
      margin: 0px auto;
      
  }
@@ -441,4 +434,34 @@ tr:nth-child(even) {
 
 .boton-form:hover {
     transform: scale(1.2);
+}
+
+.direccion .city {
+    margin-left: 25px;
+}
+
+.cp {
+    display: flex;
+}
+
+.cp select {
+    height: 20px;
+    margin-top: 5px;
+}
+
+fieldset .sangria {
+    margin-left: 90px;
+}
+
+fieldset .postal {
+    margin-left: 12px;
+    width: 45px;
+}
+
+fieldset .nacimiento {
+    margin-left: 23px;
+}
+
+fieldset .otrasangria {
+    margin-left: 19px;
 }
